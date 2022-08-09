@@ -1,0 +1,2 @@
+Uma breve lista de exercícios básicos para aprendizado tirados do site python.org.br
+link: https://wiki.python.org.br/ListaDeExercicios
