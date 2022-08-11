@@ -2,5 +2,4 @@
 #temperatura em graus Celsius.     C = 5 * ((F-32) / 9).
 
 fahrenheit = float(input('Insira a temperatura me fahrenheit:'))
-celsius = 5 * ((fahrenheit - 32) / 9)
-print('A temperatura em Celsius é:', celsius, '°C')
+print('A temperatura em Celsius é:', 5 * ((fahrenheit - 32) / 9), '°C')

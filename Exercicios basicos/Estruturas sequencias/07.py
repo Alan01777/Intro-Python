@@ -3,5 +3,4 @@
 
 altura = float(input('Insira a altura:'))
 largura = float(input('Insira a largura:'))
-resultado = (altura * largura) * 2
-print('Resultado:', resultado)
+print('Resultado:', (altura * largura) * 2)
