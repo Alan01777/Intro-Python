@@ -10,8 +10,25 @@
 
 metros_cliente = float(input("Área em m²:"))
 
-litros = metros_cliente / 6
+litros = (metros_cliente / 6)*1.1
 qnt_latas = int(litros / 18)
-if (metros_cliente % 6 != 0):
+
+if (metros_cliente % 18 != 0):
     qnt_latas += 1
-qnt_galoes=
+qnt_galoes = int((litros / 3.6))
+if (metros_cliente % 3.6 != 0):
+    qnt_galoes += 1
+
+qtd_galao_misto = int(litros/3.6)
+qtd_lata_misto =((litros - qtd_galao_misto * 3.6) / 18)
+valor_galao_misto = qtd_galao_misto * 25
+valor_lata_misto = qtd_lata_misto * 80
+
+print("Latas necessárias:", qnt_latas, "\tPreço: R$", qnt_latas * 80)
+print("Galões necessários:", qnt_galoes, "\tPreço: R$", qnt_galoes * 25)
+
+print('considerando o menor desperdíciode tinta, temos:')
+print(f'quantidade galões: {qtd_galao_misto:.0f}')
+print(f'quantidade latas: {qtd_lata_misto:.0f}')
+print(f'quantidade total mistas: {qtd_galao_misto + qtd_lata_misto:.0f}')
+print(f'valor total considerando GALOES e LATAS é: R$ {valor_galao_misto + valor_lata_misto:.2f}')

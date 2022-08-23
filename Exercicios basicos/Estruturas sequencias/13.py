@@ -12,5 +12,3 @@ match genero:
     case "Mulher":
         hMulher=float(input('Altura para mulher:'))
         print('Seu peso ideal:', (62.1*hMulher) - 44.7, 'KG')
-
-
