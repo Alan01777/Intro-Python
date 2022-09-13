@@ -18,8 +18,8 @@ while continuar == True:
         print(f'\nLevou {anos} anos!'
               f'\nPais A: {int(paisA)} habitantes'
               f'\nPais B: {int(paisB)} habitantes')
-    escolha = str(input('Deseja Continuar?(s/n)'))
-    if escolha == 's':
+    escolha = input('Deseja Continuar?(s/n)')
+    if escolha == 'n':
+        continuar = False
+    else:
         continuar = True
-    elif escolha == 'n':
-        continuar == True

@@ -13,8 +13,8 @@ taxaB = 0.015
 while paisA < paisB:
     paisA = paisA + (taxaA * paisA)
     paisB = paisB + (taxaB * paisB)
-    anos+=1
-    
+    anos += 1
+
 else:
     print(f'\nLevou {anos} anos!'
           f'\nPais A: {int(paisA)} habitantes'
