@@ -3,10 +3,10 @@
 #cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam
 #R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
 
-metros_cliente = float(input("Área em metros quadrados a ser pintada:"))
-litros_necessarios = metros_cliente / 3
-latas_necessarias = int(litros_necessarios / 18)
-if (litros_necessarios % 18 != 0):
-    latas_necessarias += 1
-print("Latas necessárias: ", latas_necessarias)
-print("Valor: R$", latas_necessarias * 80)
+metrosCliente = float(input("Área em metros quadrados a ser pintada:"))
+litrosNecessarrios = metrosCliente / 3
+latasNecessarias = int(litrosNecessarrios / 18)
+if (litrosNecessarrios % 18 != 0):
+    latasNecessarias += 1
+print("Latas necessárias: ", latasNecessarias)
+print("Valor: R$", latasNecessarias * 80)

@@ -8,27 +8,27 @@
 #-misturar latas e galões, de forma que o desperdício de tinta seja menor.
 #Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 
-metros_cliente = float(input("Área em m²:"))
+metrosCliente = float(input("Área em m²:"))
 
-litros = (metros_cliente / 6)*1.1
-qnt_latas = int(litros / 18)
+litros = (metrosCliente / 6)*1.1
+quantidadeLatas = int(litros / 18)
 
-if (metros_cliente % 18 != 0):
-    qnt_latas += 1
-qnt_galoes = int((litros / 3.6))
-if (metros_cliente % 3.6 != 0):
-    qnt_galoes += 1
+if (metrosCliente % 18 != 0):
+    quantidadeLatas += 1
+quantidadeGaloes = int((litros / 3.6))
+if (metrosCliente % 3.6 != 0):
+    quantidadeGaloes += 1
 
-qtd_galao_misto = int(litros/3.6)
-qtd_lata_misto =((litros - qtd_galao_misto * 3.6) / 18)
-valor_galao_misto = qtd_galao_misto * 25
-valor_lata_misto = qtd_lata_misto * 80
+quantidadeGaloesMisto = int(litros/3.6)
+quantidadeLatasMisto =((litros - quantidadeGaloesMisto * 3.6) / 18)
+valorGalaoMisto = quantidadeGaloesMisto * 25
+valorLataMisto = quantidadeLatasMisto * 80
 
-print("Latas necessárias:", qnt_latas, "\tPreço: R$", qnt_latas * 80)
-print("Galões necessários:", qnt_galoes, "\tPreço: R$", qnt_galoes * 25)
+print("Latas necessárias:", quantidadeLatas, "\tPreço: R$", quantidadeLatas * 80)
+print("Galões necessários:", quantidadeGaloes, "\tPreço: R$", quantidadeGaloes * 25)
 
 print('considerando o menor desperdíciode tinta, temos:')
-print(f'quantidade galões: {qtd_galao_misto:.0f}')
-print(f'quantidade latas: {qtd_lata_misto:.0f}')
-print(f'quantidade total mistas: {qtd_galao_misto + qtd_lata_misto:.0f}')
-print(f'valor total considerando GALOES e LATAS é: R$ {valor_galao_misto + valor_lata_misto:.2f}')
+print(f'quantidade galões: {quantidadeGaloesMisto:.0f}')
+print(f'quantidade latas: {quantidadeLatasMisto:.0f}')
+print(f'quantidade total mistas: {quantidadeGaloesMisto + quantidadeLatasMisto:.0f}')
+print(f'valor total considerando GALOES e LATAS é: R$ {valorGalaoMisto + valorLataMisto:.2f}')
