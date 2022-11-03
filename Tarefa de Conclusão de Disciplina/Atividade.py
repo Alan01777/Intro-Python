@@ -2,7 +2,8 @@ import sys
 import os
 import time
 
-clear = lambda: os.system('clear')
+clear = lambda: os.system('clear') #função usada para limpar a tela
+
 #Funções axuiliares para chamada das listas/questões
 #=================Lista 01=================
 def listaI():
@@ -11,6 +12,7 @@ def listaI():
         clear()
         print(30 * '=', 'ListaI-Questão:01', 30 * '=')
 
+        #Ainda não foi adicionada
 
         print('Voltando ao menu...')
         time.sleep(5)
@@ -22,6 +24,7 @@ def listaI():
         clear()
         print(30 * '=', 'ListaI-Questão:02', 30 * '=')
 
+        #Ainda não foi adicionada
 
         print('Voltando ao menu...')
         time.sleep(5)
