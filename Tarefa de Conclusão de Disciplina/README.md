@@ -1,8 +1,8 @@
-Tarefa de Conclusão de Discoplina
+Tarefa de Conclusão de Disciplina
 
 Aluno: Francisco Alan Oliveira da Costa Alves
 
-I Escolha 2 questões de cada lista de exercício:
+I - Escolha 2 questões de cada lista de exercício:
 
     -lista 1: fundamentos do python
 
@@ -10,9 +10,9 @@ I Escolha 2 questões de cada lista de exercício:
 
     -lista 3: estruturas de repetição
 
-II- Reescreva-os na forma de funções.
+II - Reescreva-os na forma de funções.
 
-III- Elabore um programa modular que apresente ao usuário:
+III - Elabore um programa modular que apresente ao usuário:
 
     -Um menu de opções, com 7 opções de algoritmos/funções para execução:
 
