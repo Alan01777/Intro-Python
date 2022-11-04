@@ -7,13 +7,16 @@ clear = lambda: os.system('clear') #função usada para limpar a tela
 #Funções axuiliares para chamada das listas/questões
 #=================Lista 01=================
 def listaI():
+    #Questões utilizadas: 06 e 
     #chamada da questão 1
     def questao01():
         clear()
-        print(30 * '=', 'ListaI-Questão:01', 30 * '=')
-
-        #Ainda não foi adicionada
-
+        print(30 * '=', 'ListaI-Questão:06', 30 * '=')
+        print(f'Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.\n')
+        #=====================================================================
+        raio = float(input('Insira o raio do circulo:'))
+        print('Área:', raio * 3.14)
+        #=====================================================================
         print('Voltando ao menu...')
         time.sleep(5)
         core()    
@@ -22,10 +25,14 @@ def listaI():
     #chamada da questão 2
     def questao02():
         clear()
-        print(30 * '=', 'ListaI-Questão:02', 30 * '=')
-
-        #Ainda não foi adicionada
-
+        print(30 * '=', 'ListaI-Questão:08', 30 * '=')
+        print(f'Faça um Programa que pergunte quanto você ganha por hora e o número de horas\n'
+        'trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.\n')
+        #=====================================================================
+        ganhoHORA = float(input('Quanto você ganha por hora?'))
+        horaMES = float(input('Quantas horas você trabalha por mês?'))
+        print('Você ganhou: R$', ganhoHORA * horaMES)
+        #=====================================================================
         print('Voltando ao menu...')
         time.sleep(5)
         core()
@@ -61,13 +68,13 @@ def listaII():
         print(f'Faça um programa que receba um número inteiro e verifique se este número é\n'
         'maior que 20, em caso afirmativo o programa deverá imprimir a mensagem: "Maior\n'
         'que 20\n')
-        #=================
+        #=====================================================================
         num = int(input("Insira um número: "))
         if (num > 20):
             print("Maior que 20")
         else:
             print("Menor que 20")
-        #=================
+        #=====================================================================
         print('Voltando ao menu...')
         time.sleep(5)
         core()
@@ -81,12 +88,12 @@ def listaII():
         'maior que 20, em caso afirmativo o programa deverá multiplicar o valor por 2 e\n'
         'após o cálculo imprimir a mensagem: "Resultado: <valor do resultado>", em que\n'
         '<valor do resultado> deve ser substituído pelo resultado do cálculo\n')
-        #=================
+        #=====================================================================
         num = int(input("Insira um número maior que 20: "))
         if (num > 20):
             num *= 2
             print(f'Resultado: {num}')
-        #=================
+        #=====================================================================
         print('Voltando ao menu...')
         time.sleep(5)
         core()
@@ -117,14 +124,14 @@ def listaIII():
             print(30 * '=', 'ListaIII-Questão:01', 30 * '=')
             print(f'Faça um programa que leia 5 números e informe a soma e a média dos números.\n')
             sum = 0
-            #=================
+            #=====================================================================
             for i in range(1, 6):
                 num = int(input("Insira um número: "))
                 sum += num
             media = sum / i
             print(f'Soma: {sum}\n'
                 f'Media: {media}')
-            #=================
+            #=====================================================================
             print('Voltando ao menu...')
             time.sleep(5)
             core()
@@ -134,7 +141,7 @@ def listaIII():
     def questao02():
         clear()
         print(30 * '=', 'ListaIII-Questão:02', 30 * '=')
-        ############################################
+        #=====================================================================
         print(f'Faça um programa que leia 10 valores e ao final imprima a média aritmética dos\n'
         'valores lidos\n')
         sum = 0
@@ -143,7 +150,7 @@ def listaIII():
             sum += num
         media = sum / i
         print(f'Media: {media}')
-        ############################################
+        #=====================================================================
         print('Voltando ao menu...')
         time.sleep(5)
         core()
@@ -196,6 +203,5 @@ def core():
         clear()
         core()
     pass
-
 
 core()
