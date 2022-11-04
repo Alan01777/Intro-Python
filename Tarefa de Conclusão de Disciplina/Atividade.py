@@ -4,6 +4,37 @@ import time
 
 clear = lambda: os.system('clear')  #função usada para limpar a tela
 
+#=================Menu=================
+def core():
+    clear()
+    print(30 * '=', 'Menu', 30 * '=')
+    print(f'Selecione uma lista abaixo:\n'
+          f'1 -lista 1: Fundamentos do python\n'
+          f'2 -lista 2: Estruturas condicionais\n'
+          f'3 -lista 3: Estruturas de repetição\n'
+          f'4 -sair')
+    escolha = input('Escolha: ')
+
+    if (escolha == '1'):
+        listaI()
+    elif (escolha == '2'):
+        listaII()
+    elif (escolha == '3'):
+        listaIII()
+    elif (escolha == '4'):
+        sair = str(input('Deseja sair? (s/n)'))
+        if (sair == 's'):
+            sys.exit()
+        else:
+            core()
+    else:
+        print("Opção inválida! Tente novamente")
+        time.sleep(1.5)
+        clear()
+        core()
+    pass
+
+
 #=================Lista 01=================
 def listaI():
     #Questões utilizadas: 06 e
@@ -196,36 +227,5 @@ def listaIII():
         listaIII()
     pass
 
-
-#=================Menu=================
-def core():
-    clear()
-    print(30 * '=', 'Menu', 30 * '=')
-    print(f'Selecione uma lista abaixo:\n'
-          f'1 -lista 1: Fundamentos do python\n'
-          f'2 -lista 2: Estruturas condicionais\n'
-          f'3 -lista 3: Estruturas de repetição\n'
-          f'4 -sair')
-    escolha = input('Escolha: ')
-
-    if (escolha == '1'):
-        listaI()
-    elif (escolha == '2'):
-        listaII()
-    elif (escolha == '3'):
-        listaIII()
-    elif (escolha == '4'):
-        sair = str(input('Deseja sair? (s/n)'))
-        if (sair == 's'):
-            sys.exit()
-        else:
-            core()
-    else:
-        print("Opção inválida! Tente novamente")
-        time.sleep(1.5)
-        clear()
-        core()
-    pass
-
-
-core()
+#Chamando a função core/núcleo, ou seja, a função menu que carregará as demais funções
+core() 
